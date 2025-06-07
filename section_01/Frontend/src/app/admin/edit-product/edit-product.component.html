@@ -1,0 +1,36 @@
+<div class="top-heading">
+  <h1>Product ID: {{ single_product_data._id }}</h1>
+</div>
+
+<div class="form-container">
+  <form #updateForm="ngForm" (ngSubmit)="updateForm_method(updateForm)">
+    <label for="name">Name</label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      [(ngModel)]="single_product_data.name"
+      required
+    />
+
+    <label for="price">Price</label>
+    <input
+      id="price"
+      type="number"
+      name="price"
+      [(ngModel)]="single_product_data.price"
+      required
+    />
+
+    <label for="description">Description</label>
+    <input
+      id="description"
+      type="text"
+      name="discription"
+      [(ngModel)]="single_product_data.discription"
+      required
+    />
+
+    <button type="submit">Update Product</button>
+  </form>
+</div>
