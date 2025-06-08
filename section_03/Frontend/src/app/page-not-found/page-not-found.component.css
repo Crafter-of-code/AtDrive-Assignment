@@ -1,0 +1,13 @@
+.main_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  overflow: hidden;
+  -webkit-user-drag: none;
+  h1 {
+    font-size: clamp(0.8rem, 3vw, 40px);
+  }
+}
