@@ -1,0 +1,30 @@
+.top_heading {
+  width: 100vw;
+}
+.top_heading > h1 {
+  width: fit-content;
+  margin: auto;
+}
+#form_container {
+  width: 100vw;
+}
+#form_container form {
+  width: 40%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+form label,
+.top_heading {
+  margin: 0.2rem 0rem;
+  font-size: clamp(0.5rem, 2vw, 20px);
+}
+form input {
+  margin: 0.5rem 0rem;
+  padding: 0.7rem;
+  font-size: clamp(0.5rem, 2vw, 20px);
+}
+form button {
+  margin: 0.6rem 0rem;
+  padding: 0.7rem;
+}
