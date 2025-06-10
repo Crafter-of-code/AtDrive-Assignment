@@ -6,7 +6,7 @@ type single_product_data_type = {
   // _id: string;
   name: string;
   price: number;
-  discription: string;
+  description: string;
 };
 @Component({
   selector: 'app-edit-product',
@@ -19,7 +19,7 @@ export class EditProductComponent {
     // _id: '',
     name: '',
     price: 0,
-    discription: '',
+    description: '',
   };
   constructor(
     private route: ActivatedRoute,

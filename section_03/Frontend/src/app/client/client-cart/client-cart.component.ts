@@ -6,7 +6,7 @@ type productType = {
   _id: string;
   name: string;
   price: number;
-  discription: string;
+  description: string;
 };
 type reponse_type = {
   type: string;

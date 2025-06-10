@@ -5,7 +5,7 @@ type product = {
   _id: string;
   name: string;
   price: number;
-  discription: string;
+  description: string;
 };
 @Component({
   selector: 'app-order-container',

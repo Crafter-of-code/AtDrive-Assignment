@@ -15,7 +15,7 @@
       >
         <div class="product-info">
           <h2 class="product-name">{{ product.name }}</h2>
-          <p class="product-description">{{ product.discription }}</p>
+          <p class="product-description">{{ product.description }}</p>
           <p class="product-price">{{ product.price | currency : "INR" }}</p>
         </div>
       </article>
@@ -23,7 +23,7 @@
       <div class="order-button-container">
         <button class="btn-order" type="button" (click)="create_order()">
           <h1>Create the order</h1>
-          <h3>Total amount {{ totalAmountOfCart }}</h3>
+          <h3>Total amount {{ totalAmountOfCart | currency : "INR" }}</h3>
         </button>
       </div>
     </div>

@@ -112,8 +112,6 @@
   box-shadow: 0 12px 28px rgba(26, 69, 159, 0.8);
   outline: none;
 }
-
-/* Responsive scaling */
 @media (max-width: 640px) {
   .section-title {
     font-size: 2.25rem;

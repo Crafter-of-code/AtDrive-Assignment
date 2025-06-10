@@ -4,7 +4,7 @@
       <app-product-container
         name="{{ product.name }}"
         price="{{ product.price }}"
-        discription="{{ product.discription }}"
+        description="{{ product.description }}"
       >
         <button><a [routerLink]="[product._id]">Edit</a></button>
         <button (click)="delete_Event(product._id)">Delete</button>

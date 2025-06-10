@@ -11,5 +11,5 @@ import { RouterLink } from '@angular/router';
 export class ProductContainerComponent {
   @Input() name: string = '';
   @Input() price: number | any = 0;
-  @Input() discription: string = '';
+  @Input() description: string = '';
 }

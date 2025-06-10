@@ -3,10 +3,10 @@ const productSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      require: true,
+      required: true,
     },
     price: Number,
-    discription: String,
+    description: String,
   },
   {
     timestamps: true,

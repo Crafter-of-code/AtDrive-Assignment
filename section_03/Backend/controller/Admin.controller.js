@@ -8,9 +8,7 @@ export async function getSingleProduct(req, res) {
   const result = await productsModel.findById(req.params.id);
   if (result) {
     res.status(200).json(result);
-  }
-  // res.json();
-  else {
+  } else {
     res.send(404).json({ message: "Your quary is not found" });
   }
 }

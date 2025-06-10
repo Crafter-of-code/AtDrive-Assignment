@@ -14,7 +14,7 @@ type product = {
   _id: string;
   name: string;
   price: number;
-  discription: string;
+  description: string;
 };
 type reponse_data = {
   type: string;

@@ -13,7 +13,7 @@ type AllProductData = {
   _id: string;
   name: string;
   price: number;
-  discription: string;
+  description: string;
 };
 @Component({
   selector: 'app-products',

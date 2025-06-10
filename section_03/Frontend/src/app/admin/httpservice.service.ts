@@ -12,17 +12,17 @@ type getProducts = {
   id: number;
   name: string;
   price: number;
-  discription: string;
+  description: string;
 };
 type addProduct = {
   name: string;
   price: number;
-  discription: string;
+  description: string;
 };
 type updated_product_type = {
   updated_product_name: string;
   updated_product_value: number;
-  updated_product_discription: string;
+  updated_product_description: string;
 };
 @Injectable({
   providedIn: 'root',

@@ -5,7 +5,7 @@ import { HttpserviceService } from '../httpservice.service';
 type data_type_from_form = {
   name: string;
   price: number;
-  discription: string;
+  description: string;
 };
 @Component({
   selector: 'app-add-product',
@@ -17,7 +17,7 @@ export class AddProductComponent {
   product = {
     name: '',
     price: null,
-    discription: '',
+    description: '',
   };
   constructor(private httpserver: HttpserviceService) {}
   onSubmitProductDiscritpion(data: NgForm) {
