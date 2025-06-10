@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="header__left">
+    <form class="search-form">
+      <input
+        type="text"
+        name="product"
+        placeholder="Search products..."
+        aria-label="Search product"
+      />
+      <button type="button">Search</button>
+    </form>
+  </div>
+
+  <div class="header__center">
+    <h2 class="nav-link" routerLink="/shop">Shop</h2>
+    <h2 class="nav-link" routerLink="cart">Cart</h2>
+    <h2 class="nav-link" routerLink="orders">My orders</h2>
+  </div>
+
+  <div class="header__right">
+    <button class="logout-button" (click)="Logout_handler()">Logout</button>
+  </div>
+</header>

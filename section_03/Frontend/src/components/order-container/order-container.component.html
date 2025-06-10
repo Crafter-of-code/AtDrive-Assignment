@@ -1,0 +1,14 @@
+<div class="products-container">
+  <div *ngFor="let product of Products; let i = index" class="product-card">
+    <div class="product-index">#{{ product._id }}</div>
+    <app-product-container
+      [name]="product.name"
+      [price]="product.price"
+      [discription]="product.discription"
+    ></app-product-container>
+  </div>
+</div>
+
+<div class="button-wrapper">
+  <ng-content />
+</div>

@@ -1,0 +1,36 @@
+<!-- Show this if there are no orders -->
+<div *ngIf="orderId.length === 0; else hasOrders" class="no-orders">
+  <h1>You have no orders</h1>
+</div>
+
+<!-- Show orders if available -->
+<ng-template #hasOrders>
+  <div class="main_container">
+    <button
+      *ngFor="let order of orderId"
+      class="order_card"
+      style="color: black; text-decoration: none"
+      (click)="getOrder_byId(order.orderId)"
+    >
+      <p style="user-select: none">
+        <strong>Order ID:</strong> {{ order.orderId }}
+      </p>
+    </button>
+  </div>
+</ng-template>
+<div *ngIf="allProduct.length === 0; else productSelected">
+  <h1 style="text-align: center; opacity: 0.2; user-select: none">
+    Kindly select a product to view details.
+  </h1>
+</div>
+<ng-template #productSelected>
+  <app-order-container [Products]="allProduct">
+    <div class="delete_button_main_container">
+      <div class="button_contain_div">
+        <button (click)="deleteOrderById()">Delete</button>
+      </div>
+    </div>
+  </app-order-container>
+</ng-template>
+
+<!-- <router-outlet /> -->

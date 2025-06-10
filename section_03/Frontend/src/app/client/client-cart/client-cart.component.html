@@ -1,0 +1,31 @@
+<div
+  *ngIf="varProductAddedToCart.length === 0; else elseBlock"
+  class="empty-cart"
+>
+  Your cart is empty
+</div>
+
+<ng-template #elseBlock>
+  <section>
+    <h1 class="section-title">Your items</h1>
+    <div class="main_container">
+      <article
+        *ngFor="let product of Cart_Product; let i = index"
+        class="product-card"
+      >
+        <div class="product-info">
+          <h2 class="product-name">{{ product.name }}</h2>
+          <p class="product-description">{{ product.discription }}</p>
+          <p class="product-price">{{ product.price | currency : "INR" }}</p>
+        </div>
+      </article>
+
+      <div class="order-button-container">
+        <button class="btn-order" type="button" (click)="create_order()">
+          <h1>Create the order</h1>
+          <h3>Total amount {{ totalAmountOfCart }}</h3>
+        </button>
+      </div>
+    </div>
+  </section>
+</ng-template>
