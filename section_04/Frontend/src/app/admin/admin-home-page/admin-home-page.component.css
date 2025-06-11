@@ -1,0 +1,71 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  box-sizing: border-box;
+}
+
+.main_container {
+  background: #fff;
+  max-width: 650px;
+  width: 100%;
+  padding: 3rem 3.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.main_container > h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #007bff;
+  text-shadow: 1px 1px 4px rgba(0, 123, 255, 0.3);
+  margin: 0;
+}
+
+.main_container > div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+app-nav-button {
+  flex: 1 1 140px;
+  max-width: 180px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+app-nav-button:hover,
+app-nav-button:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 123, 255, 0.35);
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .main_container {
+    padding: 2rem 1.5rem;
+  }
+
+  .main_container > div {
+    gap: 1rem;
+  }
+
+  app-nav-button {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}

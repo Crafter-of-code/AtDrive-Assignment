@@ -1,0 +1,17 @@
+<app-client-header [Logout_handler]="logout_handler" />
+<div style="height: 2rem">
+  <div
+    style="
+      display: flex;
+      justify-content: center;
+      height: fit-content;
+      width: 100%;
+    "
+  >
+    <app-response-handler
+      [type]="clientHttp.var_response_type"
+      [message]="clientHttp.var_response_message"
+    />
+  </div>
+</div>
+<router-outlet />

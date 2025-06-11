@@ -1,0 +1,22 @@
+<div class="main_weather_container" [style]="cssStyle">
+  <app-weather-container />
+  <div class="weather_bringer">
+    <!-- <button (click)="WeatherHider()">Hide weather</button> -->
+    <button (click)="WeatherShower()">{{ var_content_of_button }}</button>
+  </div>
+</div>
+
+<p class="title">Our Products</p>
+<div class="main_container">
+  <div *ngFor="let product of Products" class="product_container">
+    <app-product-container
+      [name]="product.name"
+      [price]="product.price"
+      [description]="product.description"
+    >
+      <div class="actions">
+        <button (click)="addToCart(product._id)">Add to card</button>
+      </div>
+    </app-product-container>
+  </div>
+</div>

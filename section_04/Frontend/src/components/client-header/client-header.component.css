@@ -1,0 +1,129 @@
+/* Container layout */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  font-family: "Inter", sans-serif;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+/* Left - Search */
+.header__left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-form input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.2s ease;
+  width: 200px;
+}
+
+.search-form input:focus {
+  border-color: #007bff;
+}
+
+.search-form button {
+  padding: 0.45rem 0.9rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Center - Nav (Shop/Cart) */
+.header__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Right - Logout */
+.header__right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logout-button {
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, #ff6a6a, #d32f2f);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(211, 47, 47, 0.4);
+  background: linear-gradient(135deg, #e53935, #c62828);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .header__left,
+  .header__center,
+  .header__right {
+    justify-content: center;
+  }
+
+  .search-form {
+    justify-content: center;
+  }
+
+  .search-form input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .logout-button {
+    width: fit-content;
+  }
+}

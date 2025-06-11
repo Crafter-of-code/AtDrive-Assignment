@@ -1,0 +1,14 @@
+<div style="position: fixed">
+  <app-response-handler
+    [type]="httpAdmin.var_response_type"
+    [message]="httpAdmin.var_response_message"
+  />
+</div>
+<div class="main_container">
+  <h1>Welcome Admin!</h1>
+  <div>
+    <app-nav-button text="All Products" to="products" />
+    <app-nav-button text="Add Product" to="addproduct" />
+    <app-nav-button text="Logout" (click)="httpAdmin.logout_handler()" />
+  </div>
+</div>

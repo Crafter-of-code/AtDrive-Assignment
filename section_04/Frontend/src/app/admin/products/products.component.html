@@ -1,0 +1,20 @@
+<div *ngIf="AllProductData.length > 0; else NoProductData">
+  <div class="main_container">
+    <div *ngFor="let product of AllProductData" class="product_container">
+      <app-product-container
+        name="{{ product.name }}"
+        price="{{ product.price }}"
+        description="{{ product.description }}"
+      >
+        <button><a [routerLink]="[product._id]">Edit</a></button>
+        <button (click)="delete_Event(product._id)">Delete</button>
+      </app-product-container>
+    </div>
+  </div>
+</div>
+<ng-template #NoProductData>
+  <div class="noProduct_Data_container">
+    <h1>No Product to show</h1>
+  </div>
+</ng-template>
+<hr />

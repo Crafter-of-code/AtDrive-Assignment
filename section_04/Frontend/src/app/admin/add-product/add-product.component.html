@@ -1,0 +1,32 @@
+<div class="form_container">
+  <form #myForm="ngForm" (ngSubmit)="onSubmitProductDiscritpion(myForm)">
+    <label for="Name_of_the_product">Name</label>
+    <input
+      type="text"
+      placeholder=""
+      id="Name_of_the_product"
+      name="name"
+      [(ngModel)]="product.name"
+      required
+    />
+    <label for="Price_of_the_product">Price</label>
+    <input
+      type="number"
+      placeholder=""
+      name="price"
+      id="Price_of_the_product"
+      [(ngModel)]="product.price"
+      required
+    />
+    <label for="description_of_the_product">description</label>
+    <input
+      type="text"
+      placeholder=""
+      id="description_of_the_product"
+      name="description"
+      [(ngModel)]="product.description"
+      required
+    />
+    <button type="submit">Submit</button>
+  </form>
+</div>
