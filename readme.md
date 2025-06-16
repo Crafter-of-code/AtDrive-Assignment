@@ -24,6 +24,8 @@ npm start
 | MySQL               | User Authentication Data & Order data |
 | Third-party API     | Weather                               |
 
-## 2. Create User Id and password by using signup option on the login page
+## Admin Id: "admin"
 
-## 3. Admin user id is "admin" and password is "admin@1234"
+## Admin password: "admin@1234"
+
+## Create User Id and password by using signup option on the login page
