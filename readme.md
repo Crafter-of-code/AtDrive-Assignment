@@ -23,3 +23,7 @@ npm start
 | MongoDB             | Product Data                          |
 | MySQL               | User Authentication Data & Order data |
 | Third-party API     | Weather                               |
+
+## 2. Create User Id and password by using signup option on the login page
+
+## 3. Admin user id is "admin" and password is "admin@1234"
